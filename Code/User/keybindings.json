@@ -1,0 +1,18 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+q",
+    "command": "extension.jumpRightBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "extension.jumpy-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "Escape",
+    "command": "extension.jumpy-exit",
+    "when": "editorTextFocus && jumpy.isJumpyMode"
+  }
+]
