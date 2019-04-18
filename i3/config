@@ -269,9 +269,6 @@ exec --no-startup-id setxkbmap -layout us,ru && setxkbmap -option 'grp:alt_shift
 # SPECIAL CASES #
 #---------------#
 
-# Telegram
-for_window [class="Telegram"]                           floating enable,    resize set 400 1000,    move position 20 40
-for_window [title="Media viewer"]                       fullscreen enable
 
 bindsym $mod+F4		exec --no-startup-id prompt "Hibernate computer?" "$hibernate"
 bindsym $mod+F5		exec --no-startup-id $netrefresh
@@ -287,3 +284,7 @@ bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # printscreen--scrot(Print=PrtSc/PrintScreen)
 bindsym $mod+Print exec --no-startup-id xfce4-screenshooter
+
+# tap to click disabled
+
+exec synclient TapButton1=0 TapButton2=0 TapButton3=0
