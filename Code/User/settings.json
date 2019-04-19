@@ -86,5 +86,18 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "liveshare.featureSet": "insiders"
+  "liveshare.featureSet": "insiders",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  //SASS compiler
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": null
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false
 }
