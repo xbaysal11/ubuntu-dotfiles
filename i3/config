@@ -263,7 +263,8 @@ client.background       $bg
 #----------------------#
 
 # Keyboard layout
-exec --no-startup-id setxkbmap -layout us,ru && setxkbmap -option 'grp:alt_shift_toggle'
+exec --no-startup-id setxkbmap -layout us,us,ru && setxkbmap -variant "basic,dvp" && setxkbmap -option 'grp:alt_shift_toggle, compose:102,numpad:shift3,kpdl:semi,keypad:atm,caps:shift'
+# exec --no-startup-id setxkbmap -layout us && setxkbmap -variant "dvp" && setxkbmap -option 'compose:102,numpad:shift3,kpdl:semi,keypad:atm,caps:shift'
 
 #---------------#
 # SPECIAL CASES #
