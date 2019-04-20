@@ -37,7 +37,8 @@ bindsym $mod+q kill
 bindsym $alt+F4 kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec rofi -show run
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -202,6 +203,9 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 # Network Manager applet
 exec --no-startup-id nm-applet
 
+#Compton
+exec --no-startup-id compton
+
 
 # ButterCup
 exec --no-startup-id butter
@@ -264,6 +268,7 @@ client.background       $bg
 
 # Keyboard layout
 exec --no-startup-id setxkbmap -layout us,us,ru && setxkbmap -variant "basic,dvorak" && setxkbmap -option 'grp:alt_shift_toggle, compose:102,numpad:shift3,kpdl:semi,keypad:atm,caps:shift'
+
 #---------------#
 # SPECIAL CASES #
 #---------------#
