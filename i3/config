@@ -29,6 +29,9 @@ font pango:FiraCode 8
 # start a terminal
 bindsym $mod+Return exec tilix
 
+# lock
+bindsym $mod+l exec i3lock-fancy
+
 # drag floating key
 floating_modifier $alt
 
@@ -222,6 +225,9 @@ bindsym $mod+Shift+w exec google-chrome
 
 # File Manager
 bindsym $mod+Shift+e    exec $term -e $file &
+
+# wallppaper
+exec_always wal -R 
 
 #------#
 # GAPS #
