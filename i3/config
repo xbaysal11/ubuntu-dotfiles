@@ -30,7 +30,7 @@ font pango:FiraCode 8
 bindsym $mod+Return exec tilix
 
 # lock
-bindsym $mod+l exec i3lock-fancy
+bindsym $mod+l exec i3lock-fancy 
 
 # drag floating key
 floating_modifier $alt
@@ -40,7 +40,7 @@ bindsym $mod+q kill
 bindsym $alt+F4 kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -combi-modi window#drun -show combi -modi combi -show-icons
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -213,10 +213,6 @@ exec --no-startup-id compton
 # ButterCup
 exec --no-startup-id butter
 
-bindsym $mod+Shift+x		exec --no-startup-id prompt "Shutdown computer?" "$shutdown"
-bindsym $mod+Shift+BackSpace	exec --no-startup-id prompt "Reboot computer?" "$reboot"
-
-
 # Telegram
 bindsym $mod+Shift+t exec --no-startup-id telegram-desktop
 
@@ -296,5 +292,4 @@ bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 bindsym $mod+Print exec --no-startup-id xfce4-screenshooter
 
 # tap to click disabled
-
 exec synclient TapButton1=0 TapButton2=0 TapButton3=0

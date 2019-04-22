@@ -1,3 +1,0 @@
-#!/bin/bash
-
-tilix -e "sudo apt list --upgradable"
