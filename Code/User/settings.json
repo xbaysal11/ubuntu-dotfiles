@@ -40,7 +40,6 @@
   "git.autofetch": true,
   "workbench.iconTheme": "material-icon-theme",
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
   "materialTheme.accent": "Pink",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#FF4081",
@@ -99,5 +98,7 @@
       "savePath": null
     }
   ],
-  "liveSassCompile.settings.generateMap": false
+  "liveSassCompile.settings.generateMap": false,
+  "workbench.colorTheme": "xDZ Dark Theme",
+  "editor.cursorStyle": "block"
 }
