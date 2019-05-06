@@ -7,8 +7,6 @@ set $file  ranger
 set $term --no-startup-id tilix
 set $shutdown sudo -A shutdown -h now
 set $reboot sudo -A reboot
-set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
-set $hibernate sudo -A systemctl suspend
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -27,7 +25,8 @@ font pango:FiraCode 8
 # font, it doesn’t scale on retina/hidpi displays.
 
 # start a terminal
-bindsym $mod+Return exec tilix
+# bindsym $mod+Return exec tilix
+bindsym $mod+Return exec $term
 
 # lock
 bindsym $mod+l exec i3lock-fancy 
@@ -167,8 +166,6 @@ bindsym $mod+slash		split vertical ;; exec $term
 bindsym $mod+Shift+slash	kill
 bindsym $mod+backslash		workspace back_and_forth
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -219,9 +216,6 @@ exec --no-startup-id compton
 #gtk theme
 exec_always --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 
-# ButterCup
-exec --no-startup-id butter
-
 # Telegram
 bindsym $mod+Shift+t exec --no-startup-id telegram-desktop
 
@@ -239,7 +233,7 @@ exec_always wal -R
 #------#
 
 #smart_gaps on
-gaps inner 10
+gaps inner 15
 gaps outer 2
 bindsym $mod+i  gaps inner current plus 5
 bindsym $mod+Shift+i	gaps inner current minus 5
@@ -253,7 +247,6 @@ smart_borders on
 
 # Window borders
 bindsym $mod+u border none
-bindsym $mod+t border normal 0
 bindsym $mod+y border pixel 3
 
 for_window [class="^.*"] border pixel 0
@@ -283,10 +276,6 @@ exec --no-startup-id setxkbmap -layout us,ru && setxkbmap -option 'grp:alt_shift
 #---------------#
 # SPECIAL CASES #
 #---------------#
-
-
-bindsym $mod+F4		exec --no-startup-id prompt "Hibernate computer?" "$hibernate"
-bindsym $mod+F5		exec --no-startup-id $netrefresh
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
