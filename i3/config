@@ -216,6 +216,8 @@ exec --no-startup-id nm-applet
 #Compton
 exec --no-startup-id compton
 
+#gtk theme
+exec_always --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 
 # ButterCup
 exec --no-startup-id butter
