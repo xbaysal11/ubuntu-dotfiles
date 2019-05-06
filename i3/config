@@ -226,7 +226,7 @@ exec --no-startup-id butter
 bindsym $mod+Shift+t exec --no-startup-id telegram-desktop
 
 # Google Chrome
-bindsym $mod+Shift+w exec google-chrome
+bindsym $mod+Shift+w exec google-chrome --force-dark-mode
 
 # File Manager
 bindsym $mod+Shift+e    exec $term -e $file &
