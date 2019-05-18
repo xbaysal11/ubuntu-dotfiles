@@ -29,7 +29,7 @@ font pango:FiraCode 8
 bindsym $mod+Return exec $term
 
 # lock
-bindsym $mod+l exec i3lock-fancy 
+bindsym $mod+l exec --no-startup-id ~/.config/i3/lock.sh &
 
 # drag floating key
 floating_modifier $alt
