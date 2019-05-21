@@ -38,7 +38,8 @@ get_duration() {
 KEY="f96214e934d7364accdc8352a4d2a5b9"
 CITY="Bishkek,KG"
 UNITS="metric"
-SYMBOL="°C"
+SYMBOL="˚C"
+# SYMBOL="°C"
 
 API="https://api.openweathermap.org/data/2.5"
 

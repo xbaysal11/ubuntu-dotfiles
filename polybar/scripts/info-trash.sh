@@ -8,6 +8,9 @@ case "$1" in
         mkdir ~/.local/share/Trash/info
         ;;
     *)
-        find ~/.local/share/Trash/files/ -maxdepth 1 | wc -l
+        num1=`find ~/.local/share/Trash/files/ -maxdepth 1 | wc -l`
+        num2=1
+        res=`expr $num1 - $num2`
+        echo $res
         ;;
 esac
