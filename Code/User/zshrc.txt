@@ -105,6 +105,11 @@ alias i3c="vim ~/.config/i3/config"
 alias polybarc="vim ~/.config/polybar/"
 alias wfc="nmcli dev wifi con"
 alias wf="nmcli dev wifi "
+alias devd="nmcli dev disconnect"
+alias devc="nmcli dev connect"
+alias h="history"
+alias hg="history | grep "
+alias ports="netstat -nlp"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
