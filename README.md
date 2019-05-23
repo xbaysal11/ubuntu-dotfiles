@@ -1,4 +1,4 @@
 # xbaysal11 DOTFILES
 ~/.config/
 
-![logo](https://i.postimg.cc/RFzJRqRf/I3.png)
+![logo](https://i.postimg.cc/8CT79Tp9/I3.png)
