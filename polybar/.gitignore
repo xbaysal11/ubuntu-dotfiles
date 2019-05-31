@@ -1,0 +1,11 @@
+/build*
+/doc/config
+/include/settings.hpp
+/polybar
+/polybar-msg
+/tags
+*.bak
+*.pyc
+*.swp
+*.tmp
+.tags
