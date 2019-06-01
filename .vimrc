@@ -1,7 +1,7 @@
 set nocompatible
 filetype off 
-call plug#begin('~/.vim/plugged')
-filetype plugin indent on 
+call plug#begin()
+filetype plugin indent on     " обязательно!
 
 " =============================================================================
 " Plugins
@@ -9,8 +9,14 @@ filetype plugin indent on
 
 Plug 'tpope/vim-fugitive'
 Plug 'lokaltog/vim-easymotion'
-Plug 'honza/vim-snippets'
-"Plug 'ryanoasis/vim-devicons'
+Plug 'floobits/floobits-neovim'
+" ---- NerdTree ----
+Plug 'scrooloose/nerdtree'
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$', '\.class$', 'pip-log\.txt$','\.o$']
+map <F3> :NERDTreeToggle<CR>
+map <F4> :NERDTreeFind<CR>
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="~"
 " ---- Airline ----
 Plug 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
@@ -18,44 +24,36 @@ let g:airline_section_y = ''
 let g:airline_section_z = '%3l/%L:%3v'
 
 " ---- Deoplete ----
-"Plug 'Shougo/deoplete.nvim'
-"let g:deoplete#enable_at_startup = 1
-"let g:deoplete#enable_ignore_case = 1 
-"let g:deoplete#auto_completion_start_length = 0
-"let g:deoplete#file#enable_buffer_path = 1
-" profile
-"let g:deoplete#enable_profile = 1
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+let g:ycm_show_diagnostics_ui = 0
+map <leader>jd :YcmCompleter GoTo<CR>
 
 " ---- ALE ----
 Plug 'w0rp/ale'
 let g:airline#extensions#ale#enabled = 1
 let g:ale_linters = {
     \'javascript': ['eslint'],
-    \'python': ['flake8', 'pylint'],
+    \'typescript': ['tslint'],
+    \'python': ['flake8'],
 \}
 let g:ale_fixers = {
             \'python': ['black'],
             \'javascript': ['prettier'],
             \'typescript': ['prettier'],
+            \'ts': ['prettier'],
             \'json': ['prettier'],
             \'go': ['gofmt'],
             \}
 let g:ale_fix_on_save = 1
 map <C-A-L> :ALEFix<CR>
-" ---- ignore files ----
-"set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,*.jpeg
+" ---- ale ignore files ----
+set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,*.jpeg
 
 
-Plug 'majutsushi/tagbar'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 
-" Start autocompletion after 4 chars
-let g:ycm_min_num_of_chars_for_completion = 4
-let g:ycm_min_num_identifier_candidate_chars = 4
-let g:ycm_enable_diagnostic_highlighting = 0
-" Don't show YCM's preview window [ I find it really annoying ]
-set completeopt-=preview
-let g:ycm_add_preview_to_completeopt = 0
+" ---- Surround ----
+Plug 'tpope/vim-surround'
+
 "---- FZF ----
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -78,151 +76,152 @@ Plug 'scrooloose/nerdcommenter'
 
 "---- Git ----
 Plug 'airblade/vim-gitgutter'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "---- Buffkill ----
 Plug 'qpkorr/vim-bufkill'
 map <C-q> :BD<CR>
 
 "---- Wakatime ----
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
+
+" ---- CSS ----
+Plug 'hail2u/vim-css3-syntax'
 
 " ---- Python ----
-Plug 'klen/python-mode'
-Plug 'zchee/deoplete-jedi'
-Plug 'plytophogy/vim-virtualenv'
-let g:deoplete#sources#jedi#python_path = 'python3'
-let g:pymode_python = 'python3'
-let g:pymode_lint_on_write = 0
-let g:pymode_rope = 0
-let g:pymode_rope_completion = 0
-let g:pymode_rope_complete_on_dot = 0
-let g:pymode_rope_lookup_project = 0
-let g:pymode_doc = 0
-let g:pymode_doc_key = 'K'
-let pymode_folding = 0
-
-"function Py2()
-  "  let g:pymode_python = 'python3'
- "   let g:deoplete#sources#jedi#python_path = 'python3'
-"endfunction
 
 " ---- Javascript ----
 " Plug 'othree/yajs.vim'
 Plug 'mxw/vim-jsx'
 let g:jsx_ext_required = 0 " highlighting jsx syntax for .js files too
 " vue
-Plug 'posva/vim-vue'
+" Plug 'posva/vim-vue'
 " ternj
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+
+" ---- Styled-components ----
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 " ---- Typescript ----
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript'
+Plug 'Quramy/tsuquyomi'
+Plug 'leafgarland/typescript-vim'
 
 " ---- JSON ----
 Plug 'elzr/vim-json'
 
-" ---- JSON ----
+" ---- EMMET ----
 Plug 'mattn/emmet-vim'
-"let g:user_emmet_install_global = 0
-"autocmd FileType html,css EmmetInstall
-let g:user_emmet_leader_key='<C-Z>'
+
 " ---- GO ----
 Plug 'fatih/vim-go'
-Plug 'zchee/deoplete-go'
+let g:go_version_warning = 0
 
 " ---- Themes ----
 Plug 'sonph/onehalf'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'altercation/vim-colors-solarized', { 'as': 'solarized' }
+Plug 'muellan/am-colors'
 let g:solarized_termcolors=256
 Plug 'morhetz/gruvbox'
 set termguicolors
 let g:gruvbox_italic=1
 
+" ---- Font ----
+if !has("gui_running")
+set guifont=Hack\ Regular\ Nerd\ Font\ Complete\ 11
+endif
+let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_conceal_nerdtree_brackets = 0
+" set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+" set guifont=Inconsolata\ for\ Powerline:h15
+set encoding=utf-8
+" ---- Icons ----
+Plug 'ryanoasis/vim-devicons'
 " ---- indentLine ----
 Plug 'Yggdroot/indentLine'
 let g:vim_json_syntax_conceal = 0
 
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
-Plug 'jiangmiao/auto-pairs'
-Plug 'morhetz/gruvbox'
-Plug 'scrooloose/nerdtree'
-map <F3> :NERDTreeToggle<CR>
-map <F4> :NERDTreeFind<CR>
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-
+" Close Vim-Plug
 call plug#end()
 
-
-set hlsearch
-set incsearch
+let mapleader=","
+set hidden
 set number
-set expandtab
-set tabstop=4
-syntax on
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+set backspace=indent,eol,start
+set mousemodel=popup
+set hlsearch
+set autoindent noexpandtab tabstop=4 shiftwidth=4
+set laststatus=2
+" ---- Hotkeys ----
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
+map <C-K> :bnext<CR>
+map <C-J> :bprev<CR>
+" ---- Mouse ----
+set mouse=a
+set clipboard=unnamedplus
+" ---- Folding ----
+set foldmethod=syntax
+set foldlevelstart=128
+set foldcolumn=0
+set encoding=utf8
 
-
-"colorschemegruvbox
-"set background=dark
-
-"mappings
-
-
-
-map <silent> <C-h> :call WinMove('h')<CR>
-map <silent> <C-j> :call WinMove('j')<CR>
-map <silent> <C-k> :call WinMove('k')<CR>
-map <silent> <C-l> :call WinMove('l')<CR>
-
-
-function! WinMove(key)
-	let t:curwin = winnr()
-	exec "wincmd ".a:key
-	if (t:curwin == winnr())
-		if (match(a:key, '[jk]'))
-			wincmd v
-		else
-			wincmd s
-		endif
-		exec "wincmd ".a:key
-	endif
-endfunction
-" NERDTress File highlighting
-
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
- exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
- exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+" ---- Functions TABS ----
+function! TabWidth4()
+    set expandtab " spaces instead of tabs 
+    set tabstop=4 " ширина табуляции
+    set softtabstop=4 " ширина таба при использовании всесто него пробелов
+    set shiftwidth=4 " ширина таба при использовании всесто него пробелов
 endfunction
 
-call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
-function! g:ChmodOnWrite()
-  if v:cmdbang
-    silent !chmod u+w %
-  endif
+function! TabWidth2()
+    set expandtab " spaces instead of tabs 
+    set tabstop=2 " ширина табуляции
+    set softtabstop=2 " ширина таба при использовании всесто него пробелов
+    set shiftwidth=2 " ширина таба при использовании всесто него пробелов
+endfunction
+call TabWidth4()
+
+" ---- Functions THEMES ----
+function! ThDracula()
+    colorscheme dracula
+    let g:airline_theme='dracula'
+    set background=dark
 endfunction
 
-autocmd BufWrite * call g:ChmodOnWrite()
+function! ThGruvL()
+    colorscheme gruvbox
+    let g:airline_theme='gruvbox'
+    set background=light
+endfunction
 
-set guifont=Hack\ Nerd\ Font\ Regular\ 20
+function! ThGruvD()
+    colorscheme gruvbox
+    let g:airline_theme='gruvbox'
+    set background=dark
+endfunction
 
+function! ThAmpresent()
+    colorscheme ampresent
+    let g:airline_theme='gruvbox'
+    set background=light
+endfunction
 
+call ThDracula()
+
+" ---- Functions ALE ----
+function! ALEShowListEnable()
+    let g:ale_open_list = 1
+    let g:ale_keep_list_window_open = 0
+endfunction
+
+function! ALEShowListDisable()
+    let g:ale_open_list = 0
+    let g:ale_keep_list_window_open = 0
+endfunction
+call ALEShowListDisable()
+if exists("g:loaded_webdevicons")
+  call webdevicons#refresh()
+endif
