@@ -233,8 +233,9 @@ exec_always wal -R
 #------#
 
 #smart_gaps on
-gaps inner 15
-gaps outer 2
+gaps inner 10
+gaps outer 0
+
 bindsym $mod+i  gaps inner current plus 5
 bindsym $mod+Shift+i	gaps inner current minus 5
 bindsym $mod+o  gaps outer current plus 5
