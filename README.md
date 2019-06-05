@@ -23,6 +23,8 @@
   * [rofi](https://github.com/DaveDavenport/rofi) - window switcher, application launcher and **dmenu replacement**
   * [compton](https://github.com/yshui/compton) - **compositor** for X - [config](/config/compton/)
   * [feh](http://feh.finalrewind.org/) - used to manage wallpaper
+  * [ranger](https://github.com/ranger/ranger) -terminal file manager
+  * [redshift](http://jonls.dk/redshift/) - adjusts the color temperature
 * [neovim](https://github.com/neovim/neovim) - Vim-fork focused on **extensibility** and usability - [config](.vimrc)
 	* [vim-plug](https://github.com/junegunn/vim-plug) - Minimalist Vim Plugin Manager
 * [zsh](http://zsh.sourceforge.net) - powerful shell that operates as both an interactive shell and as a scripting language interpreter - [config](.zshrc)
@@ -46,6 +48,7 @@
 ├── ranger
 ├── vim
 ├── bash
+├── redshift
 └── zsh
 ```
 
