@@ -111,7 +111,7 @@ alias h="history"
 alias hg="history | grep "
 alias ports="netstat -nlp"
 alias p="cd prog/"
-alias dt='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias dt='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
