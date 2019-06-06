@@ -2,14 +2,14 @@
 
 case "$1" in
     --night)
+        echo "234"
         redshift -O 3000
-        echo ""
         ;;
     --day)
-        redshift -O 6500
-        echo ""
+        redshift -x
+        echo "1111"
         ;;
     *)
-        echo ""
+        echo  ""
         ;;
 esac
