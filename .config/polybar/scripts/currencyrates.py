@@ -19,7 +19,7 @@ for c in currencies.split(','):
 
 # some unicode currency code replacement (optional)
 res = res.replace("USD", "")
-res = res.replace("RUB", "")
+res = res.replace("RUB", "  ")
 
 # res = res.replace("USD", "$")
 # res = res.replace("EUR", "€")
