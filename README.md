@@ -8,7 +8,7 @@
      xbaysal11 GNU/Linux Dotfiles
 </p>
 
-![logo](https://i.postimg.cc/8CT79Tp9/I3.png)
+![logo](https://i.postimg.cc/j2tXtSVf/i3.png)
 <p align="center">
 <img align="center" height="80" style="padding-left: 5px; padding-right: 5px" src="https://i.postimg.cc/8CT79Tp9/I3.png">
 <img align="center" height="80" style="padding-left: 5px; padding-right: 5px" src="https://i.postimg.cc/8CT79Tp9/I3.png">
