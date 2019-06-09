@@ -207,6 +207,7 @@ bindsym $mod+r mode "resize"
 # Polybar 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 bindsym $mod+Shift+f exec ~/.config/polybar/launch.sh &
+bindsym $mod+Shift+g exec killall -q polybar
 # Network Manager applet
 exec --no-startup-id nm-applet
 
