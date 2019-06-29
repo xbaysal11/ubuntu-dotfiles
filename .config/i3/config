@@ -39,7 +39,7 @@ bindsym $mod+f exec killall -q polybar
 bindsym $mod+Return exec $term
 
 # lock
-bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/lock.sh &
+bindsym $mod+l exec --no-startup-id ~/.config/i3/lock.sh &
 
 # Network Manager applet
 exec --no-startup-id nm-applet
@@ -119,7 +119,7 @@ exec synclient TapButton1=0 TapButton2=0 TapButton3=0
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
+bindsym $mod+p focus up
 bindsym $mod+semicolon focus right
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
