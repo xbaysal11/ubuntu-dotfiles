@@ -9,9 +9,10 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-  ZSH_THEME="robbyrussell"
-#  ZSH_THEME="bira"
-#  ZSH_THEME="ir_black"
+ #ZSH_THEME="random"
+ ZSH_THEME="xbaysal11"
+ #ZSH_THEME="robbyrussell"
+ #ZSH_THEME="refined"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -33,7 +34,7 @@
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+ #DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -55,7 +56,7 @@
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+ HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -69,10 +70,15 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
+  sudo
+  extract
+  yarn
+  npm
+  rvm 
 )
 
 source $ZSH/oh-my-zsh.sh
-PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} '
+#PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} '
 
 # User configuration
 
@@ -100,6 +106,7 @@ PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} '
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias ls="colorls --group-directories-first"
 alias zshrc="vim ~/.zshrc"
 alias i3c="vim ~/.config/i3/config"
 alias polybarc="vim ~/.config/polybar/"
@@ -107,8 +114,8 @@ alias wfc="nmcli dev wifi con"
 alias wf="nmcli dev wifi "
 alias devd="nmcli dev disconnect"
 alias devc="nmcli dev connect"
-alias h="history -E"
-alias hg="history -E | grep "
+alias h="history"
+alias hg="history | grep "
 alias ports="netstat -nlp"
 alias p="cd prog/"
 alias rs="rails s"
@@ -132,3 +139,4 @@ export PATH=$PATH:~/.rvm/gems/ruby-2.6.3/bin
 export PATH="${PATH}:${HOME}/.local/bin/"
 
 #export PATH=$PATH:~/bin/mysql:
+
