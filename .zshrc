@@ -100,7 +100,7 @@ PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} '
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshc="vim ~/.zshrc"
+alias zshrc="vim ~/.zshrc"
 alias i3c="vim ~/.config/i3/config"
 alias polybarc="vim ~/.config/polybar/"
 alias wfc="nmcli dev wifi con"
@@ -111,6 +111,11 @@ alias h="history"
 alias hg="history | grep "
 alias ports="netstat -nlp"
 alias p="cd prog/"
+alias rs="rails s"
+alias gP="git push origin master"
+alias gL="git pull origin master"
+alias gC="gcmsg"
+alias gS="git status"
 alias dt='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
@@ -121,6 +126,8 @@ export SDKMAN_DIR="/home/xbaysal11/.sdkman"
 [[ -s "/home/xbaysal11/.sdkman/bin/sdkman-init.sh" ]] && source "/home/xbaysal11/.sdkman/bin/sdkman-init.sh"
 
 export PATH=$PATH:~/.yarn/bin
+export PATH=$PATH:~/.rvm/gems/ruby-2.6.3/bin
+
 
 export PATH="${PATH}:${HOME}/.local/bin/"
 
