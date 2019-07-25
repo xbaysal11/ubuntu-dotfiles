@@ -123,6 +123,9 @@ alias gP="git push origin master"
 alias gL="git pull origin master"
 alias gC="gcmsg"
 alias gS="git status"
+alias vpn="sudo openvpn --config us_openvpn.ovpn"
+alias mgzvpn="sudo openvpn magaz_spalmalo_com.ovpn"
+alias mgzssh="ssh root@10.0.0.35"
 alias dt='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
