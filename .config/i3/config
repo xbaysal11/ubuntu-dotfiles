@@ -56,6 +56,9 @@ bindsym $mod+t  exec --no-startup-id telegram-desktop
 # Google Chrome
 bindsym $mod+w  exec google-chrome --force-dark-mode
 
+#Task manager
+bindsym $mod+z exec $term -e 'htop' &
+
 # File Manager
 bindsym $mod+e  exec $term -e $file &
 
