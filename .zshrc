@@ -130,6 +130,10 @@ alias mgzvpn="sudo openvpn magaz_spalmalo_com.ovpn"
 alias usvpn="sudo openvpn --config us_openvpn.ovpn"
 alias mgzssh="ssh root@10.0.0.35"
 alias dt='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias screen2='xrandr --output DP-1 --right-of eDP-1 --auto'
+alias screen1='xrandr --auto'
+alias screen2off='xrandr --output DP-1 --off'
+
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
