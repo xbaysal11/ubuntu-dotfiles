@@ -132,7 +132,9 @@ alias mgzssh="ssh root@10.0.0.35"
 alias dt='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias screen2='xrandr --output DP-1 --right-of eDP-1 --auto'
 alias screen1='xrandr --auto'
-alias screen2off='xrandr --output DP-1 --off'
+alias wfoff='nmcli dev disconnect wlp3s0'
+alias wfon='nmcli dev connect wlp3s0'
+alias mc='./.config/polybar/scripts/macCommand.sh'
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
