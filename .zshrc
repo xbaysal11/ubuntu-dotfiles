@@ -71,14 +71,13 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   sudo
-  extract
-  yarn
-  npm
-  rvm 
 )
 
 source $ZSH/oh-my-zsh.sh
 #PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} '
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=241"
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # User configuration
 

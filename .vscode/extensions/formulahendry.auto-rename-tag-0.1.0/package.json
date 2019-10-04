@@ -1,0 +1,70 @@
+{
+	"name": "auto-rename-tag",
+	"displayName": "Auto Rename Tag",
+	"description": "Auto rename paired HTML/XML tag",
+	"version": "0.1.0",
+	"publisher": "formulahendry",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"categories": [
+		"Other",
+		"Programming Languages"
+	],
+	"keywords": [
+		"AutoComplete",
+		"rename",
+		"tag",
+		"html",
+		"xml",
+		"multi-root ready"
+	],
+	"bugs": {
+		"url": "https://github.com/formulahendry/vscode-auto-rename-tag/issues",
+		"email": "formulahendry@gmail.com"
+	},
+	"homepage": "https://github.com/formulahendry/vscode-auto-rename-tag/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/formulahendry/vscode-auto-rename-tag.git"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Auto Rename Tag configuration",
+			"properties": {
+				"auto-rename-tag.activationOnLanguage": {
+					"type": "array",
+					"default": [
+						"*"
+					],
+					"description": "Set the languages that the extension will be activated.  e.g. [\"html\",\"xml\",\"php\"] By default, it is [\"*\"] and will be activated for all languages.",
+					"scope": "resource"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.32",
+		"@types/node": "^6.0.40",
+		"mocha": "^6.1.4",
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0"
+	},
+	"__metadata": {
+		"id": "6e440e71-8ed9-4f25-bb78-4b13096b8a03",
+		"publisherId": "38bbe3f0-5204-4170-845e-c2f966d979b8",
+		"publisherDisplayName": "Jun Han"
+	}
+}

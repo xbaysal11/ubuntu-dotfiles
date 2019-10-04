@@ -1,0 +1,31 @@
+{
+	"name": "html-snippets",
+	"displayName": "HTML Snippets",
+	"description": "Full HTML tags including HTML5 Snippets",
+	"version": "0.2.1",
+	"publisher": "abusaidm",
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.9.1"
+	},
+	"galleryBanner": {
+		"color": "#1E81C1",
+		"theme": "light"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "be992f3f-9f22-4b66-a1d2-ecad04c28a28",
+		"publisherId": "7fe357ee-5480-4a7d-a4e9-009d9438c2a3",
+		"publisherDisplayName": "Mohamed Abusaid"
+	}
+}
