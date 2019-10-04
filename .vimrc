@@ -10,6 +10,7 @@ filetype plugin indent on     " обязательно!
 Plug 'tpope/vim-fugitive'
 Plug 'lokaltog/vim-easymotion'
 Plug 'floobits/floobits-neovim'
+Plug 'ryanoasis/vim-devicons'
 " ---- NerdTree ----
 Plug 'scrooloose/nerdtree'
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$', '\.class$', 'pip-log\.txt$','\.o$']

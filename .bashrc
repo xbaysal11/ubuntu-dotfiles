@@ -16,7 +16,6 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-export HISTTIMEFORMAT="%d/%m/%y %H:%M "
 HISTSIZE=1000
 HISTFILESIZE=2000
 
@@ -116,3 +115,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
