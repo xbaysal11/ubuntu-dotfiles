@@ -134,6 +134,9 @@ alias screen1='xrandr --auto'
 alias wfoff='nmcli dev disconnect wlp3s0'
 alias wfon='nmcli dev connect wlp3s0'
 alias mc='./.config/polybar/scripts/macCommand.sh'
+alias sai='sudo apt install'
+alias sshpub='cat ~/.ssh/id_rsa.pub'
+alias sshprv='cat ~/.ssh/id_rsa'
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
