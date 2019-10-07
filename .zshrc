@@ -34,6 +34,7 @@ alias p="cd prog/"
 alias mc='./.config/polybar/scripts/macCommand.sh'
 alias sai='sudo apt install'
 alias dns='sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"; echo "DNS changed successfully"'
+alias wclone='wget --limit-rate=200k -nc -k --random-wait -r -p -E -e robots=off -U mozilla'
 
 ### Config files
 alias zshrc="vim ~/.zshrc"
@@ -49,6 +50,7 @@ alias wfoff='nmcli dev disconnect wlp3s0'
 alias wfon='nmcli dev connect wlp3s0'
 alias screen2='xrandr --output DP-1 --right-of eDP-1 --auto'
 alias screen1='xrandr --auto'
+alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed to 65"'
 
 ### Git
 alias rs="rails s"
