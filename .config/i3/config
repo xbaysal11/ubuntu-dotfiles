@@ -30,6 +30,9 @@ floating_modifier $alt
 
 #=========================================================
 
+# Natural Scrolling
+exec_always --no-startup-id ~/.config/i3/set_natural_scrolling.sh &
+
 # Polybar 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 bindsym $mod+r exec ~/.config/polybar/launch.sh &
