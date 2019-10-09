@@ -35,6 +35,7 @@ alias mc='./.config/polybar/scripts/macCommand.sh'
 alias sai='sudo apt install'
 alias dns='sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"; echo "DNS changed successfully"'
 alias wclone='wget --limit-rate=200k -nc -k --random-wait -r -p -E -e robots=off -U mozilla'
+alias lout='sudo pkill -u xbaysal11'
 
 ### Config files
 alias zshrc="vim ~/.zshrc"
