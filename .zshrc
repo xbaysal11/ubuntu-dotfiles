@@ -30,12 +30,14 @@ alias ls="colorls --group-directories-first"
 alias h="history"
 alias hg="history | grep "
 alias ports="netstat -nlp"
-alias p="cd prog/"
-alias mc='./.config/polybar/scripts/macCommand.sh'
+alias p="cd ~/prog/ && cd"
+alias mc='~/.config/polybar/scripts/macCommand.sh'
 alias sai='sudo apt install'
 alias dns='sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"; echo "DNS changed successfully"'
 alias wclone='wget --limit-rate=200k -nc -k --random-wait -r -p -E -e robots=off -U mozilla'
 alias lout='sudo pkill -u xbaysal11'
+alias s='~/scripts/screenshot.sh'
+alias f='~/scripts/fileshare.sh'
 
 ### Config files
 alias zshrc="vim ~/.zshrc"
@@ -61,21 +63,21 @@ alias gA="git add ."
 alias gP="git push origin master"
 alias gL="git pull origin master"
 alias gC="gcmsg"
+alias gCL="gcl"
 alias gS="git status"
 alias dt='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 ### SSH
-alias splmlvpn="sudo openvpn spalmalo.ovpn"
-alias usavpn="sudo openvpn --config usa.ovpn"
+alias splmlvpn="sudo openvpn ~/scripts/spalmalo.ovpn"
+alias usavpn="sudo openvpn --config ~/scripts/usa.ovpn"
+alias xvpn="sudo openvpn --config ~/scripts/xbaysal11.ovpn"
 alias mgzssh="ssh root@10.0.0.35"
 alias xssh='ssh root@10.0.0.37'
+alias gssh='ssh root@35.245.175.101'
 alias sshpub='cat ~/.ssh/id_rsa.pub'
 alias sshprv='cat ~/.ssh/id_rsa'
 
 # export PATH
-#export SDKMAN_DIR="/home/xbaysal11/.sdkman"
-#[[ -s "/home/xbaysal11/.sdkman/bin/sdkman-init.sh" ]] && source "/home/xbaysal11/.sdkman/bin/sdkman-init.sh"
 export PATH=$PATH:~/.yarn/bin
 export PATH=$PATH:~/.rvm/gems/ruby-2.6.3/bin
 export PATH="${PATH}:${HOME}/.local/bin/"
-#export PATH=$PATH:~/bin/mysql:
