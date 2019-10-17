@@ -1,0 +1,19 @@
+{
+  "name": "vsliveshare-electon-sign-in",
+  "version": "0.1.0",
+  "description": "Electron app for browserless sign in",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sign",
+    "in",
+    "vsliveshare",
+    "collaboration",
+    "electron",
+    "auth"
+  ],
+  "author": "Microsoft",
+  "license": "SEE LICENSE IN /LICENSE.txt"
+}

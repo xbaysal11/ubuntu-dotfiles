@@ -1,6 +1,6 @@
 {
   // onSave
-  "editor.formatOnSave": true,
+  // "editor.formatOnSave": true,
   "eslint.autoFixOnSave": true,
   "eslint.alwaysShowStatus": true,
   // "files.autoSave": "onFocusChange",
@@ -14,7 +14,7 @@
   //   "workbench.activityBar.visible": false,
   "window.menuBarVisibility": "toggle",
   "editor.minimap.enabled": false,
-  "window.zoomLevel": -0.65,
+  "window.zoomLevel": -1,
   //theme
   "editor.tokenColorCustomizations": {
     "comments": "#8f8f8f",
@@ -71,7 +71,6 @@
   "colorize.ignore_search_variables_info": true,
   "explorer.confirmDragAndDrop": false,
   "eslint.packageManager": "yarn",
-
   //brackets
   "bracketPairColorizer.showBracketsInGutter": true,
   "bracketPairColorizer.showHorizontalScopeLine": false,
@@ -89,7 +88,6 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   //SASS compiler
   "liveSassCompile.settings.formats": [
     {
@@ -104,5 +102,8 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "go.useLanguageServer": true
+  "go.useLanguageServer": true,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 4,
+  "trailingComma": "none"
 }

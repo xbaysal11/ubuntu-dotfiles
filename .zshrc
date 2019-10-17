@@ -30,7 +30,6 @@ alias ls="colorls --group-directories-first"
 alias h="history"
 alias hg="history | grep "
 alias ports="netstat -nlp"
-alias p="cd ~/prog/ && cd"
 alias mc='~/.config/polybar/scripts/macCommand.sh'
 alias sai='sudo apt install'
 alias dns='sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"; echo "DNS changed successfully"'
