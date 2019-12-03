@@ -1,0 +1,28 @@
+|----------------------------------------------------------------------|
+# TODO for Version 1.6.8
+|----------------------------------------------------------------------|
+#Pre Publish TODO List
+1. change changelog.md
+2. Update README.md
+3. change package.json (Version)
+|----------------------------------------------------------------------|
+
+
+TODO figure out why folding isn't working #12
+TODO* more Vue Support (medium Priority)
+
+SASS Formatter
+|----------------------------------------------------------------------|
+TODO Add set header position when previous header has a comma at the end.
+|----------------------------------------------------------------------|
+SASS Linter
+|----------------------------------------------------------------------|
+TODO  Lint all open windows.
+TODO Fix #16
+TODO Add no tabs rule if indent using spaces is true and vice versa. Related: #17
+|----------------------------------------------------------------------|
+|----------------------------------------------------------------------|
+TESTS
+|----------------------------------------------------------------------|
+TODO ADD tests for everything
+|----------------------------------------------------------------------|

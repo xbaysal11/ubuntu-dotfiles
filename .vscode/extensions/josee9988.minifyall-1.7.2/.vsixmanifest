@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="minifyall" Version="1.7.2" Publisher="josee9988"/>
+    <DisplayName>MinifyAll</DisplayName>
+    <Description xml:space="preserve">Minifier for JSON, CSS, HTML, LESS, SASS, SCSS, JavaScript, JSONC, Typescript(testing), and JavaScriptReact(testing). You will love its simplicity!</Description>
+    <Tags>minifier,formatter,format,compressor,compress,minify,css,json,jsonc,html,less,sass,scss,size,reduce,javascript,js,javascriptreact,react,typescript,ts,terser,keybindings</Tags>
+    <Categories>Other,Formatters,Programming Languages</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.40.0" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/Josee9988/MinifyAll.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/Josee9988/MinifyAll.git" />
+        
+          <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/Josee9988/MinifyAll.git" />
+        
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/Josee9988/MinifyAll/issues" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/Josee9988/MinifyAll" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#1b1a1a" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+      
+      
+    </Properties>
+    <License>extension/LICENSE.txt</License>
+    <Icon>extension/Screenshots/icon.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/Screenshots/icon.png" Addressable="true" />
+  </Assets>
+</PackageManifest>

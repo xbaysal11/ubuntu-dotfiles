@@ -1,0 +1,254 @@
+{
+	"name": "minifyall",
+	"displayName": "MinifyAll",
+	"description": "Minifier for JSON, CSS, HTML, LESS, SASS, SCSS, JavaScript, JSONC, Typescript(testing), and JavaScriptReact(testing). You will love its simplicity!",
+	"version": "1.7.2",
+	"publisher": "josee9988",
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Jose Gracia Berenguer",
+		"email": "jgracia9988@gmail.com"
+	},
+	"icon": "Screenshots/icon.png",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"categories": [
+		"Other",
+		"Formatters",
+		"Programming Languages"
+	],
+	"keywords": [
+		"minifier",
+		"formatter",
+		"format",
+		"compressor",
+		"compress",
+		"minify",
+		"minifier",
+		"css",
+		"json",
+		"jsonc",
+		"html",
+		"less",
+		"sass",
+		"scss",
+		"jsonc",
+		"size",
+		"reduce",
+		"javascript",
+		"js",
+		"javascriptreact",
+		"react",
+		"typescript",
+		"ts",
+		"terser"
+	],
+	"bugs": {
+		"url": "https://github.com/Josee9988/MinifyAll/issues",
+		"email": "jgracia9988@gmail.com"
+	},
+	"homepage": "https://github.com/Josee9988/MinifyAll",
+	"galleryBanner": {
+		"color": "#1b1a1a",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Josee9988/MinifyAll.git"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./src/main.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.MinifyAll",
+				"title": "Minify this document ⚡"
+			},
+			{
+				"command": "extension.MinifyAll2OtherDoc",
+				"title": "Minify this document and preserve the original ⛏"
+			},
+			{
+				"command": "extension.MinifyAll2OtherDocSelected",
+				"title": "Minify the selected document and preserve the original 💎"
+			},
+			{
+				"command": "extension.MinifyAllSelectedText",
+				"title": "Minify the selected text 🎯"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.MinifyAll",
+				"title": "Minify this document ⚡",
+				"key": "Ctrl+alt+M",
+				"mac": "cmd+alt+M",
+				"linux": "Ctrl+alt+M",
+				"win": "Ctrl+alt+M"
+			},
+			{
+				"command": "extension.MinifyAll2OtherDoc",
+				"title": "Minify this document and preserve the original ⛏",
+				"key": "Ctrl+alt+N",
+				"mac": "cmd+alt+N",
+				"linux": "Ctrl+alt+N",
+				"win": "Ctrl+alt+N"
+			},
+			{
+				"command": "extension.MinifyAllSelectedText",
+				"title": "Minify the selected text 🎯",
+				"key": "Ctrl+alt+. Ctrl+alt+M",
+				"mac": "Ctrl+alt+. Ctrl+alt+M",
+				"linux": "Ctrl+alt+. Ctrl+alt+M",
+				"win": "Ctrl+alt+. Ctrl+alt+M"
+			}
+		],
+		"configuration": {
+			"title": "MinifyAll",
+			"properties": {
+				"MinifyAll.disableHexadecimalShortener": {
+					"type": "boolean",
+					"default": true,
+					"description": "If you want MinifyAll to stop shortening colors, such as rgb to 3 digit hex, or rgba to hex, or 6 digit hex to 3 digit hex. (True for disabling hex.)"
+				},
+				"MinifyAll.disableStatusbarInformation": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to stop showing an status bar with information about the compression after you minify a file. (True for disabling.)"
+				},
+				"MinifyAll.statusbarPriority": {
+					"type": "integer",
+					"default": 0,
+					"description": "Priority of the status bar. 0 Is the greatest."
+				},
+				"MinifyAll.statusbarAlignment": {
+					"type": "string",
+					"default": "Left",
+					"enum": [
+						"Left",
+						"Right"
+					],
+					"enumDescriptions": [
+						"Align the status bar indicator to the left.",
+						"Align the status bar indicator to the right."
+					],
+					"description": "Align the status bar indicator to the left or the right. (Default left)"
+				},
+				"MinifyAll.disableHtml": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to stop minimizing HTML. (True for disabling)"
+				},
+				"MinifyAll.disableCss": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to stop minimizing CSS. (True for disabling)"
+				},
+				"MinifyAll.disableScss": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to stop minimizing SCSS. (True for disabling)"
+				},
+				"MinifyAll.disableLess": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to stop minimizing LESS. (True for disabling)"
+				},
+				"MinifyAll.disableSass": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to stop minimizing SASS. (True for disabling)"
+				},
+				"MinifyAll.disableJson": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to stop minimizing JSON. (True for disabling)"
+				},
+				"MinifyAll.disableJsonc": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to stop minimizing JSONC. (True for disabling)"
+				},
+				"MinifyAll.disableJavascript": {
+					"type": "boolean",
+					"default": true,
+					"description": "If you want MinifyAll to stop minimizing JavaScript. (True for disabling)"
+				},
+				"MinifyAll.disableJavascriptReact": {
+					"type": "boolean",
+					"default": true,
+					"description": "If you want MinifyAll to stop minimizing JavaScriptReact. (True for disabling)"
+				},
+				"MinifyAll.disableTypescript": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to stop minimizing Typescript. (True for disabling)"
+				},
+				"MinifyAll.disableMessages": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to stop showing error, warning or information messages. (True for disabling)"
+				},
+				"MinifyAll.minifyOnSave": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to minify every time you save in the same file. (True for disabling)"
+				},
+				"MinifyAll.minifyOnSaveToNewFIle": {
+					"type": "boolean",
+					"default": false,
+					"description": "If you want MinifyAll to minify every time you save in other file. (True for disabling)"
+				}
+			}
+		},
+		"menus": {
+			"editor/context": [
+				{
+					"command": "extension.MinifyAll",
+					"when": "editorLangId == html || editorLangId == css || editorLangId == scss || editorLangId == less || editorLangId == json || editorLangId == jsonc || editorLangId == javascript || editorLangId == javascriptreact || editorLangId == typescript",
+					"group": "MinifyAll"
+				},
+				{
+					"command": "extension.MinifyAll2OtherDoc",
+					"when": "editorLangId == html || editorLangId == css || editorLangId == scss || editorLangId == less || editorLangId == json || editorLangId == jsonc || editorLangId == javascript || editorLangId == javascriptreact || editorLangId == typescript",
+					"group": "MinifyAll"
+				},
+				{
+					"command": "extension.MinifyAllSelectedText",
+					"when": "editorLangId == html || editorLangId == css || editorLangId == scss || editorLangId == less || editorLangId == json || editorLangId == jsonc || editorLangId == javascript || editorLangId == javascriptreact || editorLangId == typescript || editorLangId == php",
+					"group": "MinifyAll"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "extension.MinifyAll2OtherDocSelected",
+					"group": "MinifyAll"
+				}
+			]
+		}
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.12.12",
+		"@types/vscode": "^1.40.0",
+		"eslint": "^6.7.1",
+		"eslint-config-airbnb-base": "^14.0.0",
+		"eslint-plugin-import": "^2.18.2",
+		"glob": "^7.1.6",
+		"mocha": "^6.2.2",
+		"typescript": "^3.7.2",
+		"vscode-test": "^1.2.3"
+	},
+	"dependencies": {
+		"terser": "^4.3.9"
+	},
+	"__metadata": {
+		"id": "0be0c393-8fd2-4ff8-9c13-e2789b45fc59",
+		"publisherId": "d1fe0d24-e662-4aad-941f-67589011e6f3",
+		"publisherDisplayName": "Jose Gracia Berenguer"
+	}
+}
