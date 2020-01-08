@@ -96,7 +96,6 @@
     }
   ],
   "liveSassCompile.settings.generateMap": false,
-  "workbench.colorTheme": "xDZ Dark Theme",
   // "editor.cursorStyle": "block",
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -107,4 +106,9 @@
   "trailingComma": "none",
   "editor.hover.enabled": false,
   "workbench.activityBar.visible": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "workbench.colorTheme": "xDZ Dark Theme",
+  "diffEditor.ignoreTrimWhitespace": false,
 }
