@@ -78,7 +78,7 @@ bindsym $mod+s  exec --no-startup-id spotify
 bindsym $mod+v  exec --no-startup-id code
 
 # Wallppaper
-exec_always wal -R 
+exec_always wal wal --vte -s -e -R 
 
 # dmenu 
 bindsym $mod+d exec rofi -combi-modi window#drun -show combi -modi combi -show-icons
