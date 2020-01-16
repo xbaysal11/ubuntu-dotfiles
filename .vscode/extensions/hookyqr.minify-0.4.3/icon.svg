@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128">
+	<defs>
+		<circle id="inner" cx="64" cy="64" r="58"></circle>
+		<circle id="outer" cx="64" cy="64" r="64"></circle>
+		<path id="shadow" d="M 102,38 l 24,32 L 114,126 l-48,-64 M 63,66 l48,64 L 75,155 l-48,-64"></path>
+		<path id="arrow" d="M0,0 L-8,8 -8,3 -16,3 -16,-3 -8,-3 -8,-8 z" fill="white" stroke="#0027FF" stroke-width="2" stroke-linejoin="round"/>
+	</defs>
+	<clipPath id="clipInner">
+		<use xlink:href="#inner" />
+	</clipPath>
+	<mask id="maskOutline">
+		<use xlink:href="#outer" fill="white" />
+		<use xlink:href="#inner" fill="black" />
+	</mask>
+	<use xlink:href="#outer" fill="#0027FF" />
+	<use xlink:href="#inner" fill="#e8e030" />
+	<use xlink:href="#shadow" fill="#E5C230" clip-path="url(#clipInner)" />
+	<use xlink:href="#shadow" fill="blue" mask="url(#maskOutline)" />
+	<g transform="translate(64 64) rotate(-45)">
+		<use xlink:href="#arrow" transform="scale(2.4) translate(-2 0)" />
+		<use xlink:href="#arrow" transform="scale(2.4) translate(2 0) rotate(180)" />
+	</g>
+</svg>

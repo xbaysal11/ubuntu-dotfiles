@@ -26,7 +26,7 @@ source $ZSH/oh-my-zsh.sh
 
 ### Terminal config
 alias vim='nvim'
-alias ls="colorls --group-directories-first"
+alias lss="colorls --sd -X"
 alias h="history"
 alias hg="history | grep "
 alias ports="netstat -nlp"
@@ -50,7 +50,8 @@ alias devd="nmcli dev disconnect"
 alias devc="nmcli dev connect"
 alias wfoff='nmcli dev disconnect wlp3s0'
 alias wfon='nmcli dev connect wlp3s0'
-alias screen2='xrandr --output DP-1 --right-of eDP-1 --auto'
+alias screen3='xrandr --output DP-1 --right-of eDP-1 --auto'
+alias screen2='xrandr --output HDMI-1 --right-of eDP-1 --auto'
 alias screen1='xrandr --auto'
 alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed to 65"'
 
@@ -78,5 +79,8 @@ alias sshprv='cat ~/.ssh/id_rsa'
 
 # export PATH
 export PATH=$PATH:~/.yarn/bin
-export PATH=$PATH:~/.rvm/gems/ruby-2.6.3/bin
+export PATH=$PATH:~/.rvm/gems/ruby-2.5.1/bin
 export PATH="${PATH}:${HOME}/.local/bin/"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

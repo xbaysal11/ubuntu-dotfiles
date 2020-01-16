@@ -109,6 +109,15 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "workbench.colorTheme": "xDZ Dark Theme",
+  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
   "diffEditor.ignoreTrimWhitespace": false,
+
+  //bem
+  "ecsstractor_port.brackets_newline_after": false,
+	"ecsstractor_port.modifier_separator": "_",
+	"ecsstractor_port.destination": "clipboard",
+  "ecsstractor_port.comment_style": "scss",
+  "ecsstractor_port.add_comment": false,
+  "ecsstractor_port.bem_nesting": true,
+  "ecsstractor_port.empty_line_before_nested_selector": false,
 }

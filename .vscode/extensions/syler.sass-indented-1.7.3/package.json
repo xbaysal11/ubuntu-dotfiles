@@ -1,0 +1,150 @@
+{
+	"name": "sass-indented",
+	"displayName": "Sass",
+	"description": "Indented Sass syntax Highlighting, Autocomplete & Formatter",
+	"version": "1.7.3",
+	"icon": "resources/images/sass-logo-seal.png",
+	"publisher": "syler",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TheRealSyler/vscode-sass-indented"
+	},
+	"bugs": "https://github.com/TheRealSyler/vscode-sass-indented/issues/new?assignees=TheRealSyler&labels=bug&template=bug_report.md&title=",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"activationEvents": [
+		"onLanguage:sass",
+		"onLanguage:vue"
+	],
+	"main": "./dist/extension",
+	"categories": [
+		"Programming Languages",
+		"Formatters"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Sass (Indented)",
+			"properties": {
+				"sass.disableAutoIndent": {
+					"type": "boolean",
+					"default": false,
+					"description": "Stop the extension from automatically indenting when pressing Enter"
+				},
+				"sass.disableUnitCompletion": {
+					"type": "boolean",
+					"default": true,
+					"description": "adds units to the intellisense completions if false."
+				},
+				"sass.autocomplete.useExperimentalData": {
+					"type": "boolean",
+					"default": true,
+					"description": "uses auto generated data."
+				},
+				"sass.format.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "enables the sass formatter."
+				},
+				"sass.format.deleteWhitespace": {
+					"type": "boolean",
+					"default": true,
+					"description": "removes trailing whitespace."
+				},
+				"sass.format.deleteEmptyRows": {
+					"type": "boolean",
+					"default": true,
+					"description": "removes empty rows."
+				},
+				"sass.format.setPropertySpace": {
+					"type": "boolean",
+					"default": true,
+					"description": "If true space between the property: value, is always set to 1."
+				},
+				"sass.format.convert": {
+					"type": "boolean",
+					"default": true,
+					"description": "Convert scss/css to sass."
+				},
+				"sass.format.debug": {
+					"type": "boolean",
+					"default": false,
+					"description": "enables debug mode."
+				},
+				"sass.lint.enable": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enables sass lint."
+				},
+				"sass.andStared": {
+					"type": "array",
+					"default": [
+						"active",
+						"focus",
+						"hover",
+						"nth-child"
+					],
+					"description": "items in this array will be at the top of the completion list (only for items that show after the & sign)"
+				}
+			}
+		},
+		"languages": [
+			{
+				"id": "sass",
+				"aliases": [
+					"Sass",
+					"sass-indented"
+				],
+				"extensions": [
+					".sass",
+					".sass.erb"
+				],
+				"configuration": "./sass.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "sass",
+				"scopeName": "source.sass",
+				"path": "./syntaxes/sass.tmLanguage.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run getData && npm run build",
+		"build": "tsc -b && suf && webpack --mode production",
+		"watch": "webpack --mode development",
+		"getData": "gcp --outPath './src/autocomplete/schemas/generatedData' --prefix 'autocomplete.data' --ignore 'allProps,standardProps,noDataProps'",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"lint": "tslint --fix -c tslint.json 'src/**/*.ts'",
+		"test": "ts-node src/test/test.ts",
+		"test:dev": "nodemon src/test/test.ts -- DEV_MODE"
+	},
+	"devDependencies": {
+		"@types/node": "^8.10.59",
+		"nodemon": "2.0.0",
+		"ts-loader": "^6.2.1",
+		"ts-node": "^8.5.2",
+		"tslib": "^1.10.0",
+		"tslint": "^5.20.1",
+		"typescript": "^3.7.2",
+		"vscode": "^1.1.26",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"get-css-props": "^1.0.1",
+		"s.color": "0.0.10",
+		"sass-formatter": "^0.4.0",
+		"suf-cli": "^0.1.0",
+		"suf-regex": "^0.0.7",
+		"test-grammar": "^1.0.0"
+	},
+	"__metadata": {
+		"id": "466468c3-1861-4ad1-bf3e-f9ad46545ebb",
+		"publisherId": "e88a3a32-0abb-4d89-a45b-aff60e1432f5",
+		"publisherDisplayName": "Syler"
+	}
+}
