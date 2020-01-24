@@ -57,7 +57,7 @@ exec --no-startup-id compton
 exec_always --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 
 # Telegram
-bindsym $mod+t  exec --no-startup-id telegram-desktop
+bindsym $mod+t  exec --no-startup-id /opt/Telegram/Telegram
 
 # Google Chrome
 bindsym $mod+w  exec google-chrome --force-dark-mode
