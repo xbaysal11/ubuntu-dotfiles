@@ -3,5 +3,13 @@
     {
         "key": "ctrl+shift+b",
         "command": "workbench.action.toggleActivityBarVisibility"
+      },
+      {
+        "key": "ctrl+alt+down",
+        "command": "cursorColumnSelectDown"
+      },
+      {
+        "key": "ctrl+alt+up",
+        "command": "cursorColumnSelectUp"
       }
 ]
