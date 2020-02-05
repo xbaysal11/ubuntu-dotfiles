@@ -1,6 +1,5 @@
 #! /bin/bash
-ip=$(curl -s https://ipinfo.io/ip)
-IP=$(curl -s https://ipvigilante.com/$ip | jq ' .data.ipv4, "",.data.country_name,"-",.data.subdivision_1_name,"-", .data.city_name' | tr -d '"') 
+IP=$(curl -s  http://ip-api.com/json/\?fields\=query,country,city,regionName | jq -r ' .query, "",.city,"-",.regionName,"-",.country' | tr -d '"') 
 
 if pgrep -x openvpn > /dev/null; then
     echo  $IP 
