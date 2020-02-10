@@ -78,14 +78,14 @@ bindsym $mod+s  exec --no-startup-id spotify
 bindsym $mod+v  exec --no-startup-id code
 
 # Wallppaper
-exec_always wal wal --vte -s -e -R 
+exec_always wal --vte -s -e -R 
 
 # dmenu 
 bindsym $mod+d exec rofi -combi-modi window#drun -show combi -modi combi -show-icons
 
 #=========================================================
 
-gaps inner 10
+gaps inner 5
 gaps outer 0
 
 smart_borders on
