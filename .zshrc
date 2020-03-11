@@ -43,9 +43,11 @@ alias zshrc="vim ~/.zshrc"
 alias i3c="vim ~/.config/i3/config"
 alias polybarc="vim ~/.config/polybar/"
 
-### Devices 
+### Devices
+alias wf="iwgetid -r"
 alias wfc="nmcli dev wifi con"
-alias wf="nmcli dev wifi "
+alias wfl="nmcli dev wifi "
+alias wfp="sudo grep psk= /etc/NetworkManager/system-connections/*"
 alias devd="nmcli dev disconnect"
 alias devc="nmcli dev connect"
 alias wfoff='nmcli dev disconnect wlp3s0'
