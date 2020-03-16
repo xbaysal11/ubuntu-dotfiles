@@ -9,11 +9,11 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch Polybar
-# polybar -c ~/.config/polybar/config.ini top &
-# polybar -c ~/.config/polybar/config.ini bottom &
-# polybar -c ~/.config/polybar/config.ini top-ext &
-# polybar -c ~/.config/polybar/config.ini bottom-ext &
+ #polybar -c ~/.config/polybar/config.ini top &
+ #polybar -c ~/.config/polybar/config.ini bottom &
+ #polybar -c ~/.config/polybar/config.ini top-ext &
+ #polybar -c ~/.config/polybar/config.ini bottom-ext &
 
 # Launch Polybar MINIMAL
-polybar -c ~/.config/polybar/config.ini top-min &
-polybar -c ~/.config/polybar/config.ini top-ext-min &
+  polybar -c ~/.config/polybar/config.ini top-min &
+  polybar -c ~/.config/polybar/config.ini top-ext-min &
