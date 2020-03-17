@@ -59,6 +59,7 @@ alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed
 
 ### Git
 alias rs="rails s"
+alias py="./manage.py runserver"
 alias ys="yarn start"
 alias gI='git init'
 alias gA="git add ."
@@ -86,3 +87,9 @@ export PATH="${PATH}:${HOME}/.local/bin/"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+eval "$(pyenv virtualenv-init -)"
