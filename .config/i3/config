@@ -39,7 +39,7 @@ exec_always --no-startup-id ~/.config/i3/set_natural_scrolling.sh &
 # Polybar 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 bindsym $mod+r exec ~/.config/polybar/launch.sh &
-bindsym $mod+f exec killall -q polybar
+bindsym $mod+g exec killall -q polybar
 
 # Terminal-tilix
 bindsym $mod+Return exec $term
@@ -61,6 +61,9 @@ bindsym $mod+t  exec --no-startup-id /opt/Telegram/Telegram
 
 # Google Chrome
 bindsym $mod+w  exec google-chrome --force-dark-mode
+
+# Firefox
+bindsym $mod+f  exec firefox
 
 #Task manager
 bindsym $mod+z exec $term -e 'htop' &
