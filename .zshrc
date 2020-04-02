@@ -37,6 +37,8 @@ alias wclone='wget --limit-rate=200k -nc -k --random-wait -r -p -E -e robots=off
 alias lout='sudo pkill -u xbaysal11'
 alias s='~/scripts/screenshot.sh'
 alias f='~/scripts/fileshare.sh'
+alias doff='~/scripts/dev-env.sh'
+alias don='~/scripts/dev-env.sh --on'
 
 ### Config files
 alias zshrc="vim ~/.zshrc"
