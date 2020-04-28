@@ -1,0 +1,482 @@
+1587700529834	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1587700641035	Sync.Service	DEBUG	User-Agent: Firefox/75.0 (Linux x86_64) FxSync/1.77.0.20200403170909.desktop
+1587700641035	Sync.Service	INFO	Starting sync at 2020-04-24 09:57:21 in browser session GBTjbmkEjVxu
+1587700641037	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1587700641080	Sync.Status	INFO	Resetting Status.
+1587700641081	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1587700641084	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1587700641903	Sync.Resource	DEBUG	GET success 200 https://sync-808-us-west-2.sync.services.mozilla.com/1.5/138338353/info/collections
+1587700641904	Sync.Service	DEBUG	Fetching server configuration: https://sync-808-us-west-2.sync.services.mozilla.com/1.5/138338353/info/configuration
+1587700641905	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1587700642168	Sync.Resource	DEBUG	GET success 200 https://sync-808-us-west-2.sync.services.mozilla.com/1.5/138338353/info/configuration
+1587700642169	Sync.Service	DEBUG	Fetching global metadata record
+1587700642169	Sync.Service	DEBUG	Weave Version: 1.77.0 Local Storage: 5 Remote Storage: 5
+1587700642169	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1587700642170	Sync.Service	INFO	Testing info/collections: {"passwords":1582101507.94,"tabs":1587700527.55,"clients":1587697984.33,"crypto":1582101504.43,"forms":1587621013.86,"meta":1586442903.08,"prefs":1586637606.92,"bookmarks":1587453841.69,"addons":1587466663.28,"history":1587700527.96}
+1587700642170	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1582101504.43
+1587700642171	Sync.Synchronizer	DEBUG	Refreshing client list.
+1587700642173	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1587700642173	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1587700642176	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1587700642443	Sync.Collection	DEBUG	GET success 200 https://sync-808-us-west-2.sync.services.mozilla.com/1.5/138338353/storage/clients?full=1&limit=1000
+1587700642457	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 2 reconciled.
+1587700642458	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1587700642463	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1587700642503	Sync.Synchronizer	INFO	Updating enabled engines: 2 clients.
+1587700642509	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1587700642513	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1587700642516	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1587700642519	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1587700642524	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1587700642530	Sync.Engine.Tabs	INFO	0 outgoing items pre-reconciliation
+1587700642533	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1587700642538	Sync.Engine.Bookmarks	DEBUG	Checking if server sync ID pqSVCBEaZSs8 matches existing
+1587700642548	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1587700642553	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1587700642554	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust
+1587700642557	Sync.Engine.Bookmarks.Mirror	DEBUG	Building local tree
+1587700642561	Sync.Engine.Bookmarks.Mirror	DEBUG	Building remote tree
+1587700642563	Sync.Engine.Bookmarks.Mirror	DEBUG	Building merged tree
+1587700642567	Sync.Engine.Bookmarks.Mirror	DEBUG	Applying merged tree
+1587700642572	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust took 17.137ms
+1587700642572	Sync.Engine.Bookmarks.Mirror	DEBUG	No changes detected in both mirror and Places
+1587700642583	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1587700642584	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1587700642584	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1587700642587	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Color (version=2.1.5, id=FirefoxColor@mozilla.com)
+1587700642587	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Tab Suspender (version=3.7.4, id=tabsuspender@michalewiczpiotr)
+1587700642588	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Black New Tab (version=1.0.0, id={3c53fae8-7f6e-4c86-b595-43f97766b977})
+1587700642588	Sync.AddonsReconciler	DEBUG	Rectifying state for addon WX Download Status Bar (version=1.10.0, id={a1c84bb7-d5fc-4906-90b4-965e520b29bf})
+1587700642588	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Country Flags & IP Whois (version=0.3.4, id={802a552e-13d1-4683-a40a-1e5325fba4bb})
+1587700642588	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bitwarden - Free Password Manager (version=1.43.4, id={446900e4-71c2-419f-a6a7-df9c091e268b})
+1587700642588	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Adblock Plus - free ad blocker (version=3.8.4, id={d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d})
+1587700642589	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Form Autofill (version=1.0, id=formautofill@mozilla.org)
+1587700642591	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Screenshots (version=39.0.0, id=screenshots@mozilla.org)
+1587700642592	Sync.AddonsReconciler	DEBUG	Rectifying state for addon WebCompat Reporter (version=1.1.0, id=webcompat-reporter@mozilla.org)
+1587700642592	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Web Compat (version=9.0.0, id=webcompat@mozilla.org)
+1587700642592	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DoH Roll-Out (version=1.3.0, id=doh-rollout@mozilla.org)
+1587700642593	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Default (version=1.0, id=default-theme@mozilla.org)
+1587700642593	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Light (version=1.0, id=firefox-compact-light@mozilla.org)
+1587700642593	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark (version=1.0, id=firefox-compact-dark@mozilla.org)
+1587700642593	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Google (version=1.0, id=google@search.mozilla.org)
+1587700642593	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Amazon.com (version=1.1, id=amazondotcom@search.mozilla.org)
+1587700642594	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bing (version=1.1, id=bing@search.mozilla.org)
+1587700642594	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DuckDuckGo (version=1.0, id=ddg@search.mozilla.org)
+1587700642594	Sync.AddonsReconciler	DEBUG	Rectifying state for addon eBay (version=1.0, id=ebay@search.mozilla.org)
+1587700642594	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Twitter (version=1.0, id=twitter@search.mozilla.org)
+1587700642594	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Wikipedia (en) (version=1.0, id=wikipedia@search.mozilla.org)
+1587700642595	Sync.AddonsReconciler	DEBUG	Rectifying state for addon English (CA) Language Pack (version=75.0buildid20200403170909, id=langpack-en-CA@firefox.mozilla.org)
+1587700642595	Sync.AddonsReconciler	DEBUG	Rectifying state for addon English (GB) Language Pack (version=75.0buildid20200403170909, id=langpack-en-GB@firefox.mozilla.org)
+1587700642595	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Russian (RU) Language Pack (version=75.0buildid20200403170909, id=langpack-ru@firefox.mozilla.org)
+1587700642595	Sync.AddonsReconciler	DEBUG	Rectifying state for addon React Developer Tools (version=4.6.0, id=@react-devtools)
+1587700642595	Sync.AddonsReconciler	DEBUG	Rectifying state for addon HD Quality Toggle for YouTube™ (version=1.3.0.14, id={1cf918d2-f4ea-4b4f-b34e-455283fef19f})
+1587700642595	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Octotree (version=4.2.1, id=jid1-Om7eJGwA1U8Akg@jetpack)
+1587700642595	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DuckDuckGoogle (version=1.2, id={5fe16324-5314-467a-8a68-568933cef8c0})
+1587700642595	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Stylus (version=1.5.11, id={7a7a4a92-a2a0-41d1-9fd7-1e92480d612d})
+1587700642596	Sync.AddonsReconciler	DEBUG	Rectifying state for addon OpenH264 Video Codec provided by Cisco Systems, Inc. (version=1.8.1.1, id=gmp-gmpopenh264)
+1587700642600	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1587700642602	Sync.Engine.Addons	INFO	0 outgoing items pre-reconciliation
+1587700642603	Sync.Engine.Addons	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1587700642604	Sync.Engine.Forms	INFO	0 outgoing items pre-reconciliation
+1587700642605	Sync.Engine.Forms	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1587700642606	Sync.Engine.History	DEBUG	Checking if server sync ID bfwcRfD1MKdu matches existing
+1587700642608	Sync.Engine.History	INFO	0 outgoing items pre-reconciliation
+1587700642609	Sync.Engine.History	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1587700642610	Sync.Engine.Extension-Storage	INFO	Skipping extension-storage sync with a chance of 0.2: false
+1587700642614	Sync.Engine.Extension-Storage	DEBUG	Syncing extension settings for ["{1cf918d2-f4ea-4b4f-b34e-455283fef19f}","{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}","{802a552e-13d1-4683-a40a-1e5325fba4bb}","{a1c84bb7-d5fc-4906-90b4-965e520b29bf}","{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}","jid1-Om7eJGwA1U8Akg@jetpack"]
+1587700642617	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700642617	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700642617	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700642617	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700642617	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700642617	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700642617	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700642617	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700642618	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700642618	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700642618	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700642618	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700642618	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700642618	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700642618	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700642618	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700642619	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700642619	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700642619	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700642619	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700642619	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1587700642643	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1587700642644	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1587700642644	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1587700642644	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1587700642644	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1587700642644	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1587700642655	FirefoxAccounts	DEBUG	getOAuthToken enter
+1587700642655	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1587700642656	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1587700642668	FirefoxAccounts	DEBUG	getOAuthToken enter
+1587700642668	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1587700642669	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1587700642678	FirefoxAccounts	DEBUG	getOAuthToken enter
+1587700642679	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1587700642679	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1587700642687	FirefoxAccounts	DEBUG	getOAuthToken enter
+1587700642687	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1587700642687	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1587700642701	FirefoxAccounts	DEBUG	getOAuthToken enter
+1587700642702	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1587700642702	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1587700642724	FirefoxAccounts	DEBUG	getOAuthToken enter
+1587700642725	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1587700642725	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1587700643350	Sync.Engine.Extension-Storage	INFO	Successfully synced '{802a552e-13d1-4683-a40a-1e5325fba4bb}'
+1587700643351	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643351	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643351	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643351	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643351	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643351	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643351	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643352	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643352	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643353	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643353	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643353	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643353	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643353	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643353	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643353	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643354	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643354	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643354	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643354	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643361	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643361	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643361	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643361	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643361	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643361	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643361	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643362	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643362	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643362	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643362	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643362	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643362	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643362	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643362	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643362	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643363	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643363	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643363	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643363	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643365	Sync.Engine.Extension-Storage	INFO	Successfully synced '{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}'
+1587700643370	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643370	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643370	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643370	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643370	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643370	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643370	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643370	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643370	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643371	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643371	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643371	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643371	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643371	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643371	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643371	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643371	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643371	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643371	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643371	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643374	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643374	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643375	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643375	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643375	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643375	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643375	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643375	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643375	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643375	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643375	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643375	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643375	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643376	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643376	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643376	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643376	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643376	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643376	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643376	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643378	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643378	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643378	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643378	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643379	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643380	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643380	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643380	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643380	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643380	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643390	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643390	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643390	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643390	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643390	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643391	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643391	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643391	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643391	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643391	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643391	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643391	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643392	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643392	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643392	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643392	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643392	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643392	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643392	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643392	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643394	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643394	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643394	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643394	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643395	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643395	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643395	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643396	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643396	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643396	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643396	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643397	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643397	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643397	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643397	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643397	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643398	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643398	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643398	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643398	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643403	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643403	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643403	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643403	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643404	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643405	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643405	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643405	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643405	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643405	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643408	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643408	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643408	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643409	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643410	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643410	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643410	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643415	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643415	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643415	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643416	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643417	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643417	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643417	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643422	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643422	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643422	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643422	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643422	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643423	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643423	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643423	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643424	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643425	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643425	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643425	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643425	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643425	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643425	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643425	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643425	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643426	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643426	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643426	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643428	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643429	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643429	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643429	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643429	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643429	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643429	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643429	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643429	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643430	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643430	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643430	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643430	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643430	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643430	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643430	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643430	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643430	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643430	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643430	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643437	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643437	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643437	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643437	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643437	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643437	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643437	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643437	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643437	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643437	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643437	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643438	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643438	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643438	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643438	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643438	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643438	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643438	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643438	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643438	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643444	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643445	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643445	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643446	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643446	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643446	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643447	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643447	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643447	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643447	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643447	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643448	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643448	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643448	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643448	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643451	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1587306499889.
+1587700643451	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1587700643451	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {ced9def2-2d86-4a1b-a9eb-29e2f3c9eb48}
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {75517d66-a4f7-4d77-8667-65ecad38ff76}
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {802a552e-13d1-4683-a40a-1e5325fba4bb}
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a1c84bb7-d5fc-4906-90b4-965e520b29bf}
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for adblock-for@youtube.com
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for oinkandstuffwebforinstagram@gmail.com
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {1cf918d2-f4ea-4b4f-b34e-455283fef19f}
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for jid1-Om7eJGwA1U8Akg@jetpack
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1587700643452	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {710ec9db-6f38-4798-90b9-7486b2285bfb}
+1587700643453	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1587700643453	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1587700643453	Sync.CollectionKeyManager	INFO	Bumping last modified to 1587306499889
+1587700643503	Sync.Engine.Extension-Storage	INFO	Successfully synced '{a1c84bb7-d5fc-4906-90b4-965e520b29bf}'
+1587700643514	Sync.Engine.Extension-Storage	INFO	Successfully synced '{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}'
+1587700673055	Sync.Engine.Extension-Storage	ERROR	Syncing {1cf918d2-f4ea-4b4f-b34e-455283fef19f}: request failed: Error: Timeout while trying to access https://webextensions.settings.services.mozilla.com/v1/buckets/default/collections/ext-gdPNRT5bqV4tMIfFUgS3DD5WSJAxWZyLWyDG4cP0IX0/records?_sort=-last_modified&_since=1586879958844 with {"headers":{"Accept":"application/json","Content-Type":"application/json","Authorization":"**** (suppressed)"},"mode":"cors"}(resource://services-common/kinto-http-client.js:2691:5) JS Stack trace: NetworkTimeoutError@kinto-http-client.js:2691:5
+[13]</timedFetch/</_timeoutId<@kinto-http-client.js:2883:18
+notify@Timer.jsm:62:17
+1587700673058	Sync.Engine.Extension-Storage	WARN	Syncing failed: Error: Timeout while trying to access https://webextensions.settings.services.mozilla.com/v1/buckets/default/collections/ext-gdPNRT5bqV4tMIfFUgS3DD5WSJAxWZyLWyDG4cP0IX0/records?_sort=-last_modified&_since=1586879958844 with {"headers":{"Accept":"application/json","Content-Type":"application/json","Authorization":"**** (suppressed)"},"mode":"cors"}(resource://services-common/kinto-http-client.js:2691:5) JS Stack trace: NetworkTimeoutError@kinto-http-client.js:2691:5
+[13]</timedFetch/</_timeoutId<@kinto-http-client.js:2883:18
+notify@Timer.jsm:62:17
+1587700673060	Sync.Status	DEBUG	Status for engine extension-storage: error.engine.reason.unknown_fail
+1587700673061	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed_partial
+1587700673061	Sync.ErrorHandler	DEBUG	extension-storage failed: Error: Timeout while trying to access https://webextensions.settings.services.mozilla.com/v1/buckets/default/collections/ext-gdPNRT5bqV4tMIfFUgS3DD5WSJAxWZyLWyDG4cP0IX0/records?_sort=-last_modified&_since=1586879958844 with {"headers":{"Accept":"application/json","Content-Type":"application/json","Authorization":"**** (suppressed)"},"mode":"cors"}(resource://services-common/kinto-http-client.js:2691:5) JS Stack trace: NetworkTimeoutError@kinto-http-client.js:2691:5
+[13]</timedFetch/</_timeoutId<@kinto-http-client.js:2883:18
+notify@Timer.jsm:62:17
+1587700673065	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1587700673065	Sync.Doctor	INFO	Skipping check of passwords - disabled via preferences
+1587700673071	Sync.Doctor	INFO	Skipping check of tabs - disabled via preferences
+1587700673072	Sync.Doctor	INFO	Skipping check of bookmarks - disabled via preferences
+1587700673072	Sync.Doctor	INFO	Skipping check of addons - disabled via preferences
+1587700673073	Sync.Doctor	INFO	Skipping check of forms - disabled via preferences
+1587700673074	Sync.Doctor	INFO	Skipping check of history - disabled via preferences
+1587700673074	Sync.Doctor	INFO	Skipping check of extension-storage - disabled via preferences
+1587700673074	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1587700673082	Sync.Synchronizer	INFO	Sync completed at 2020-04-24 09:57:53 after 32.00 secs.
+1587700673086	Sync.Declined	DEBUG	Handling remote declined: []
+1587700673086	Sync.Declined	DEBUG	Handling local declined: []
+1587700673087	Sync.Declined	DEBUG	Declined changed? false
+1587700673089	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1587700673092	Sync.ErrorHandler	ERROR	Some engines did not sync correctly.
+1587700673101	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
