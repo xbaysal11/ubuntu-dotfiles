@@ -32,7 +32,6 @@ alias hg="history | grep "
 alias ports="netstat -nlp"
 alias mc='~/.config/polybar/scripts/macCommand.sh'
 alias sai='sudo apt install'
-alias dns='sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"; echo "DNS changed successfully"'
 alias wclone='wget --limit-rate=200k -nc -k --random-wait -r -p -E -e robots=off -U mozilla'
 alias lout='sudo pkill -u xbaysal11'
 alias s='~/scripts/screenshot.sh'
@@ -58,6 +57,15 @@ alias screen3='xrandr --output DP-1 --right-of eDP-1 --auto'
 alias screen2='xrandr --output HDMI-1 --right-of eDP-1 --auto'
 alias screen1='xrandr --auto'
 alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed to 65"'
+
+### DNS
+alias dns='cat /etc/resolv.conf'
+alias dns-cloudflare='sudo sh -c "echo nameserver 1.1.1.1 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nCLOUDFLARE (FAST)\n1.1.1.1"'
+alias dns-yandex='sudo sh -c "echo nameserver 77.88.8.8 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nYANDEX (FAST + STABLE)\n77.88.8.8"'
+alias dns-google='sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nGOOGLE (STABLE)\n8.8.8.8"'
+alias dns-adguard1='sudo sh -c "echo nameserver 176.103.130.130 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nADGUARD DEFAULT (adblock)\n176.103.130.130"'
+alias dns-adguard2='sudo sh -c "echo nameserver 176.103.130.132 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nADFUARD FAMILY (adblock + porn)\n176.103.130.132"'
+
 
 ### Git
 alias rs="rails s"
