@@ -11,5 +11,9 @@
       {
         "key": "ctrl+alt+up",
         "command": "cursorColumnSelectUp"
+      },
+      {
+        "key": "shift+enter",
+        "command": "extension.aceJump"
       }
 ]

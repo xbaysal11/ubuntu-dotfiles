@@ -1,20 +1,75 @@
 {
-  // onSave
+  // --------- SAVE ----------
   // "editor.formatOnSave": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
   // "files.autoSave": "onFocusChange",
-  //f
-  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace' , 'Droid Sans Fallback'",
-  "editor.fontLigatures": true,
-  //fonts
+  "files.associations": {
+    "*.html": "html",
+    "*.nj": "html"
+  },
+
+  // --------- PRETTIER -----------
+  "editor.tabSize": 2,
+  "prettier.tabWidth": 2,
+  "editor.detectIndentation": false,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.packageManager": "yarn",
+  // "[html]": {
+  //   "editor.defaultFormatter": "vscode.html-language-features"
+  // },
+
+  // --------- ESLINT ---------
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "eslint.migration.2_x": "off",
+  // "eslint.autoFixOnSave": true,
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true
+  // },
+
+  // ------------ ACE JUMPER -----------
+  "aceJump.placeholder.backgroundColor": "#fff600",
+  "aceJump.placeholder.fontWeight": "900",
+
+  // ----- BRACKETS ------
+  "bracket-pair-colorizer-2.colors": ["Gold", "Orchid", "LightSkyBlue"],
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.forceIterationColorCycle": true,
+  "bracket-pair-colorizer-2.colorMode": "Consecutive",
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+
+  // --------- FONTS -------
   "editor.fontSize": 13,
   "terminal.integrated.fontSize": 13,
-  //visibility
+  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace' , 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+
+  // ------ VISIBILITY --------
+  "window.zoomLevel": -1,
   "window.menuBarVisibility": "toggle",
   "editor.minimap.enabled": false,
-  "window.zoomLevel": -1,
-  //theme
+  "window.title": "VSCode",
+  "editor.hover.enabled": false,
+  "workbench.activityBar.visible": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.renderLineHighlight": "gutter",
+  "breadcrumbs.enabled": true,
+  "editor.snippetSuggestions": "top",
+  "git.ignoreMissingGitWarning": true,
+  "git.autofetch": true,
+  "editor.renderIndentGuides": false,
+  // "editor.cursorStyle": "block",
+
+  // ------------- THEME --------------
+  "workbench.colorTheme": "Andromeda Bordered",
   "editor.tokenColorCustomizations": {
     "comments": "#8f8f8f",
     "textMateRules": [
@@ -26,20 +81,12 @@
       }
     ]
   },
-  "jumpRightBrackets.rightBrackets": ")}",
-  "editor.snippetSuggestions": "top",
   "workbench.startupEditor": "newUntitledFile",
-  "editor.renderIndentGuides": false,
-  "git.ignoreMissingGitWarning": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "breadcrumbs.enabled": true,
   "workbench.editor.tabSizing": "shrink",
-  "window.title": "VSCode",
-  "git.autofetch": true,
   "workbench.iconTheme": "material-icon-theme",
-  "explorer.confirmDelete": false,
   "materialTheme.accent": "Pink",
+  "material-icon-theme.folders.color": "#ef5350",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#FF4081",
     "list.activeSelectionForeground": "#FF4081",
@@ -61,33 +108,8 @@
     "menu.selectionForeground": "#FF4081",
     "menubar.selectionForeground": "#FF4081"
   },
-  "material-icon-theme.folders.color": "#ef5350",
-  "highlightLine.borderColor": "#FF4081",
-  "highlightLine.borderWidth": "1px",
-  "highlightLine.borderStyle": "solid",
-  "nunjucksFormat.textpreserve": false,
-  "editor.renderLineHighlight": "gutter",
-  "colorize.ignore_search_variables_info": true,
-  "explorer.confirmDragAndDrop": false,
-  "eslint.packageManager": "yarn",
-  //brackets
-  "bracketPairColorizer.showBracketsInGutter": true,
-  "bracketPairColorizer.showHorizontalScopeLine": false,
-  "guides.active.width": 3,
-  "files.associations": {
-    "*.html": "html"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "liveshare.featureSet": "insiders",
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  //SASS compiler
+
+  // --------- SASS COMPILE ------------
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
@@ -95,29 +117,5 @@
       "savePath": null
     }
   ],
-  "liveSassCompile.settings.generateMap": false,
-  // "editor.cursorStyle": "block",
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "go.useLanguageServer": true,
-  "prettier.singleQuote": true,
-  "prettier.tabWidth": 4,
-  "trailingComma": "none",
-  "editor.hover.enabled": false,
-  "workbench.activityBar.visible": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
-  "diffEditor.ignoreTrimWhitespace": false,
-
-  //bem
-  "ecsstractor_port.brackets_newline_after": false,
-	"ecsstractor_port.modifier_separator": "_",
-	"ecsstractor_port.destination": "clipboard",
-  "ecsstractor_port.comment_style": "scss",
-  "ecsstractor_port.add_comment": false,
-  "ecsstractor_port.bem_nesting": true,
-  "ecsstractor_port.empty_line_before_nested_selector": false,
+  "liveSassCompile.settings.generateMap": false
 }
