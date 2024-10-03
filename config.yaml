@@ -1,0 +1,254 @@
+# C:\Users\xbaysal11\AppData\Roaming\tabby
+version: 7
+groups: []
+configSync:
+  parts: {}
+hotkeys:
+  toggle-window:
+    - Ctrl-Space
+  copy-current-path: []
+  ctrl-c:
+    - Ctrl-C
+  copy:
+    - Ctrl-Shift-C
+  paste:
+    - Ctrl-Shift-V
+    - Shift-Insert
+  select-all:
+    - Ctrl-Shift-A
+  clear: []
+  zoom-in:
+    - Ctrl-=
+    - Ctrl-Shift-=
+  zoom-out:
+    - Ctrl--
+    - Ctrl-Shift--
+  reset-zoom:
+    - Ctrl-0
+  home:
+    - Home
+  end:
+    - End
+  previous-word:
+    - Ctrl-Left
+  next-word:
+    - Ctrl-Right
+  delete-previous-word:
+    - Ctrl-Backspace
+  delete-line:
+    - Ctrl-Shift-Backspace
+  delete-next-word:
+    - Ctrl-Delete
+  search:
+    - Ctrl-Shift-F
+  pane-focus-all:
+    - Ctrl-Shift-I
+  focus-all-tabs:
+    - Ctrl-Alt-Shift-I
+  scroll-to-top:
+    - Ctrl-PageUp
+  scroll-up:
+    - Alt-PageUp
+  scroll-down:
+    - Alt-PageDown
+  scroll-to-bottom:
+    - Ctrl-PageDown
+  restart-telnet-session: []
+  restart-ssh-session: []
+  launch-winscp: []
+  settings-tab: {}
+  settings:
+    - Ctrl-,
+  serial:
+    - Alt-K
+  restart-serial-session: []
+  new-tab:
+    - Ctrl-Shift-T
+  new-window:
+    - Ctrl-Shift-N
+  profile: {}
+  profile-selectors: {}
+  toggle-fullscreen:
+    - F11
+    - Alt-Enter
+  close-tab:
+    - Ctrl-Shift-W
+  reopen-tab:
+    - Ctrl-Shift-Z
+  toggle-last-tab: []
+  rename-tab:
+    - Ctrl-Shift-R
+  next-tab:
+    - Ctrl-Shift-Right
+    - Ctrl-Tab
+  previous-tab:
+    - Ctrl-Shift-Left
+    - Ctrl-Shift-Tab
+  move-tab-left:
+    - Ctrl-Shift-PageUp
+  move-tab-right:
+    - Ctrl-Shift-PageDown
+  rearrange-panes:
+    - Ctrl-Shift
+  duplicate-tab: []
+  restart-tab: []
+  reconnect-tab: []
+  disconnect-tab: []
+  explode-tab:
+    - Ctrl-Shift-.
+  combine-tabs:
+    - Ctrl-Shift-,
+  tab-1:
+    - Alt-1
+  tab-2:
+    - Alt-2
+  tab-3:
+    - Alt-3
+  tab-4:
+    - Alt-4
+  tab-5:
+    - Alt-5
+  tab-6:
+    - Alt-6
+  tab-7:
+    - Alt-7
+  tab-8:
+    - Alt-8
+  tab-9:
+    - Alt-9
+  tab-10:
+    - Alt-0
+  tab-11: []
+  tab-12: []
+  tab-13: []
+  tab-14: []
+  tab-15: []
+  tab-16: []
+  tab-17: []
+  tab-18: []
+  tab-19: []
+  tab-20: []
+  split-right:
+    - Ctrl-Shift-S
+  split-bottom:
+    - Ctrl-Shift-D
+  split-left: []
+  split-top: []
+  pane-nav-right:
+    - Ctrl-Alt-Right
+  pane-nav-down:
+    - Ctrl-Alt-Down
+  pane-nav-up:
+    - Ctrl-Alt-Up
+  pane-nav-left:
+    - Ctrl-Alt-Left
+  pane-nav-previous:
+    - Ctrl-Alt-[
+  pane-nav-next:
+    - Ctrl-Alt-]
+  pane-nav-1: []
+  pane-nav-2: []
+  pane-nav-3: []
+  pane-nav-4: []
+  pane-nav-5: []
+  pane-nav-6: []
+  pane-nav-7: []
+  pane-nav-8: []
+  pane-nav-9: []
+  pane-maximize:
+    - Ctrl-Alt-Enter
+  close-pane: []
+  pane-increase-vertical: []
+  pane-decrease-vertical: []
+  pane-increase-horizontal: []
+  pane-decrease-horizontal: []
+  switch-profile:
+    - Ctrl-Alt-T
+  profile-selector:
+    - Ctrl-Shift-E
+  command-selector:
+    - Ctrl-Shift-P
+  workspace-profile-1: []
+  workspace-profile-2: []
+  workspace-profile-3: []
+  workspace-profile-4: []
+  workspace-profile-5: []
+terminal:
+  searchOptions: {}
+  colorScheme:
+    name: Night Owl
+    foreground: '#d6deeb'
+    background: '#00031e'
+    cursor: '#80a4c2'
+    colors:
+      - '#011627'
+      - '#ef5350'
+      - '#22da6e'
+      - '#addb67'
+      - '#82aaff'
+      - '#c792ea'
+      - '#21c7a8'
+      - '#ffffff'
+      - '#969696'
+      - '#ef5350'
+      - '#22da6e'
+      - '#ffeb95'
+      - '#82aaff'
+      - '#c792ea'
+      - '#7fdbca'
+      - '#ffffff'
+  customColorSchemes:
+    - name: Night Owl
+      foreground: '#d6deeb'
+      background: '#00031e'
+      cursor: '#80a4c2'
+      colors:
+        - '#011627'
+        - '#ef5350'
+        - '#22da6e'
+        - '#addb67'
+        - '#82aaff'
+        - '#c792ea'
+        - '#21c7a8'
+        - '#ffffff'
+        - '#969696'
+        - '#ef5350'
+        - '#22da6e'
+        - '#ffeb95'
+        - '#82aaff'
+        - '#c792ea'
+        - '#7fdbca'
+        - '#ffffff'
+  profile: local:git-bash
+  font: Fira Code
+  fontSize: 11
+  ligatures: true
+  bell: audible
+  autoOpen: false
+  fontWeight: 300
+ssh: {}
+clickableLinks: {}
+accessibility: {}
+appearance:
+  spaciness: 0.7
+  css: |-
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar-button,
+    ::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-track-piece {
+        width: 0 !important;
+    }
+hacks: {}
+providerBlacklist: []
+commandBlacklist: []
+enableWelcomeTab: false
+pluginBlacklist: []
+profileDefaults:
+  ssh:
+    disableDynamicTitle: true
+profileBlacklist: []
+hideTray: true
+profiles: []
+workspaceManager:
+  runOnStartup: true
